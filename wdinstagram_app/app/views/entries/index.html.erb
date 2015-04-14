@@ -1,0 +1,7 @@
+<h1>wdinstgram_app</h1>
+<ul>
+  <% @entries.each do |entry| %>
+  <li><a href= "/entries/<%= entry.id %>"><%= entry.author %>: <%= entry.date_taken %></a></li>
+  <% end %>
+</ul>
+<a href="/entries/new/">Add Entry</a>
